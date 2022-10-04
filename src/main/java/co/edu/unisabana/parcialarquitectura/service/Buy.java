@@ -1,13 +1,12 @@
 package co.edu.unisabana.parcialarquitectura.service;
 
-
-import co.edu.unisabana.parcialarquitectura.repository.Database;
+import co.edu.unisabana.parcialarquitectura.repository.IDatabase;
 
 public class Buy {
 
-  private Database database;
+  private IDatabase database;
 
-  public Buy(Database database){
+  public Buy(IDatabase database){
     this.database = database;
   }
 
