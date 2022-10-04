@@ -6,8 +6,7 @@ import co.edu.unisabana.parcialarquitectura.repository.Database;
 public class Buy {
 
 
-  public String makePurchase(int vendorCode, int buyerCode, String item) {
-    Database database = new Database();
+  public String makePurchase(Database database, int vendorCode, int buyerCode, String item) {
     if (buyerCode == vendorCode) {
       throw new IllegalSaleException(vendorCode, buyerCode);
     }
